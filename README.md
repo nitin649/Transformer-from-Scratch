@@ -92,3 +92,6 @@ Encoder-Decoder models were originally built to solve such Seq2Seq problems.
    The decoder block is also an GRU cell. The main thing to note here is that the initial states (h₀) of the decoder are set to the final states 
    (hₜ) of the encoder.These act as the ‘context’ vector and help the decoder produce the desired target-sequence.Now the way decoder works, is, that 
    its output at any time-step t is supposed to be the tᵗʰ word in the target-sequence/Y_true. 
+## Future Improvements
+   Developed this model using character level classification approach due to hardware/memory constraint.In future we can use word level classification which makes the prediction more accurate.
+   
